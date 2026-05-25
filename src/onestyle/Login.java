@@ -48,121 +48,73 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
+        setPreferredSize(new java.awt.Dimension(1366, 768));
+        getContentPane().setLayout(null);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/Lc.jpg.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/logooooo.png"))); // NOI18N
         jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(430, 20, 420, 240);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setLayout(null);
 
-        irCrearCBtn.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        irCrearCBtn.setFont(new java.awt.Font("Segoe UI Black", 2, 18)); // NOI18N
         irCrearCBtn.setText("Create una");
         irCrearCBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         irCrearCBtn.addActionListener(this::irCrearCBtnActionPerformed);
+        jPanel1.add(irCrearCBtn);
+        irCrearCBtn.setBounds(830, 340, 140, 40);
 
-        inciarSBtn.setFont(new java.awt.Font("Segoe UI Black", 2, 12)); // NOI18N
+        inciarSBtn.setFont(new java.awt.Font("Segoe UI Black", 2, 24)); // NOI18N
         inciarSBtn.setText("Iniciar sesion");
         inciarSBtn.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         inciarSBtn.addActionListener(this::inciarSBtnActionPerformed);
+        jPanel1.add(inciarSBtn);
+        inciarSBtn.setBounds(760, 210, 180, 100);
 
         contraseñaPf.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         contraseñaPf.addActionListener(this::contraseñaPfActionPerformed);
+        jPanel1.add(contraseñaPf);
+        contraseñaPf.setBounds(140, 330, 460, 40);
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 2, 24)); // NOI18N
         jLabel4.setText("CONTRASEÑA");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(140, 290, 220, 32);
 
         correoTxt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.add(correoTxt);
+        correoTxt.setBounds(140, 190, 460, 40);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 2, 24)); // NOI18N
         jLabel2.setText("CORREO");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(140, 140, 200, 32);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 2, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 2, 24)); // NOI18N
         jLabel1.setText("INICIAR SESION");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(10, 0, 290, 70);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI Semilight", 2, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI Semilight", 2, 18)); // NOI18N
         jLabel6.setText("¿No tienes cuenta?");
+        jPanel1.add(jLabel6);
+        jLabel6.setBounds(680, 340, 150, 30);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Semilight", 2, 10)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Segoe UI Semilight", 2, 14)); // NOI18N
         jLabel7.setText("Inicia sesion para entrar a la pagina");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(10, 30, 290, 50);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(correoTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 357, Short.MAX_VALUE)
-                    .addComponent(contraseñaPf)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(223, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(irCrearCBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(210, 210, 210))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(inciarSBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(246, 246, 246))))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
-                .addComponent(jLabel7)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addGap(26, 26, 26)
-                .addComponent(correoTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addComponent(contraseñaPf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(inciarSBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(irCrearCBtn)
-                    .addComponent(jLabel6))
-                .addGap(33, 33, 33))
-        );
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(140, 300, 1050, 420);
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/fondo.jpg.png"))); // NOI18N
         jLabel3.setText("jLabel3");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 770, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(0, 0, 1366, 768);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
