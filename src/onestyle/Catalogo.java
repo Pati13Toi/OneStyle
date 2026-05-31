@@ -34,7 +34,7 @@ public class Catalogo extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        Vista1 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -72,11 +72,11 @@ public class Catalogo extends javax.swing.JFrame {
         getContentPane().add(jButton5);
         jButton5.setBounds(920, 420, 290, 280);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/1camisa.jpg.png"))); // NOI18N
-        jButton6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jButton6.addActionListener(this::jButton6ActionPerformed);
-        getContentPane().add(jButton6);
-        jButton6.setBounds(170, 90, 300, 280);
+        Vista1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/1camisa.jpg.png"))); // NOI18N
+        Vista1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Vista1.addActionListener(this::Vista1ActionPerformed);
+        getContentPane().add(Vista1);
+        Vista1.setBounds(170, 90, 300, 280);
 
         jButton7.setText("CONFI");
         getContentPane().add(jButton7);
@@ -95,9 +95,12 @@ public class Catalogo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void Vista1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Vista1ActionPerformed
+Vistaprevia1 vista = new Vistaprevia1();
+    vista.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_Vista1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,12 +128,12 @@ public class Catalogo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Vista1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
