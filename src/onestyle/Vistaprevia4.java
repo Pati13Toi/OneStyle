@@ -8,14 +8,14 @@ package onestyle;
  *
  * @author BRENDA
  */
-public class Vistaprevia1 extends javax.swing.JFrame {
+public class Vistaprevia4 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Vistaprevia1.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Vistaprevia4.class.getName());
 
     /**
      * Creates new form Vistaprevia1
      */
-    public Vistaprevia1() {
+    public Vistaprevia4() {
         initComponents();
     }
 
@@ -44,16 +44,16 @@ public class Vistaprevia1 extends javax.swing.JFrame {
         jButton1.setText("X");
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/camisa1.1.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/camisa4.4.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 48)); // NOI18N
         jLabel3.setText("$50.000");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel4.setText("Camisa inspirada en el album");
+        jLabel4.setText("Camisa inspirada en la cancion");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel5.setText("del cantante Eladio Carrion");
+        jLabel5.setText("del productor Tainy y cantante Feid");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         jLabel6.setText("TALLAS: ");
@@ -73,7 +73,7 @@ public class Vistaprevia1 extends javax.swing.JFrame {
                         .addGap(41, 41, 41)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -158,7 +158,7 @@ this.dispose();
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Vistaprevia1().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Vistaprevia4().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

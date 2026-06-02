@@ -8,14 +8,14 @@ package onestyle;
  *
  * @author BRENDA
  */
-public class Vistaprevia1 extends javax.swing.JFrame {
+public class Vistaprevia2 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Vistaprevia1.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Vistaprevia2.class.getName());
 
     /**
      * Creates new form Vistaprevia1
      */
-    public Vistaprevia1() {
+    public Vistaprevia2() {
         initComponents();
     }
 
@@ -44,16 +44,16 @@ public class Vistaprevia1 extends javax.swing.JFrame {
         jButton1.setText("X");
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/camisa1.1.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/camisa2.2.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 48)); // NOI18N
         jLabel3.setText("$50.000");
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel4.setText("Camisa inspirada en el album");
+        jLabel4.setText("Camisa inspirada en la serie");
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jLabel5.setText("del cantante Eladio Carrion");
+        jLabel5.setText("Stranger Things");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         jLabel6.setText("TALLAS: ");
@@ -158,7 +158,7 @@ this.dispose();
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Vistaprevia1().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Vistaprevia2().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

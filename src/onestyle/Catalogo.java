@@ -28,6 +28,7 @@ public class Catalogo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton7 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -35,7 +36,6 @@ public class Catalogo extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         Vista1 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -43,32 +43,43 @@ public class Catalogo extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
+        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jButton7.setText("CONFIGURACION");
+        jButton7.addActionListener(this::jButton7ActionPerformed);
+        getContentPane().add(jButton7);
+        jButton7.setBounds(1110, 10, 170, 60);
+
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jTextField1);
         jTextField1.setBounds(130, 30, 960, 18);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/2camisa.jpg.png"))); // NOI18N
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton1.addActionListener(this::jButton1ActionPerformed);
         getContentPane().add(jButton1);
         jButton1.setBounds(580, 90, 280, 280);
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/3camisa.jpg.png"))); // NOI18N
         jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton2.addActionListener(this::jButton2ActionPerformed);
         getContentPane().add(jButton2);
         jButton2.setBounds(930, 90, 270, 280);
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/4camisa,jpg.png"))); // NOI18N
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton3.addActionListener(this::jButton3ActionPerformed);
         getContentPane().add(jButton3);
         jButton3.setBounds(170, 420, 300, 290);
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/5camisa.jpg.png"))); // NOI18N
         jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton4.addActionListener(this::jButton4ActionPerformed);
         getContentPane().add(jButton4);
         jButton4.setBounds(580, 420, 280, 280);
 
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/6camisa.jpg.png"))); // NOI18N
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jButton5.addActionListener(this::jButton5ActionPerformed);
         getContentPane().add(jButton5);
         jButton5.setBounds(920, 420, 290, 280);
 
@@ -77,10 +88,6 @@ public class Catalogo extends javax.swing.JFrame {
         Vista1.addActionListener(this::Vista1ActionPerformed);
         getContentPane().add(Vista1);
         Vista1.setBounds(170, 90, 300, 280);
-
-        jButton7.setText("CONFI");
-        getContentPane().add(jButton7);
-        jButton7.setBounds(1280, 20, 70, 60);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/Lcpequeño.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -101,6 +108,48 @@ Vistaprevia1 vista = new Vistaprevia1();
 
     this.dispose();
     }//GEN-LAST:event_Vista1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+Vistaprevia2 vista = new Vistaprevia2();
+    vista.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+Vistaprevia3 vista = new Vistaprevia3();
+    vista.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+Vistaprevia4 vista = new Vistaprevia4();
+    vista.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+Vistaprevia5 vista = new Vistaprevia5();
+    vista.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+Vistaprevia6 vista = new Vistaprevia6();
+    vista.setVisible(true);
+
+    this.dispose();
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+Configuracion vista = new Configuracion();
+vista.setVisible(true);
+
+this.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
