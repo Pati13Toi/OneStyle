@@ -4,6 +4,8 @@
  */
 package onestyle;
 
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JOptionPane;
@@ -133,34 +135,36 @@ public class Registro extends javax.swing.JFrame {
     }//GEN-LAST:event_correoTxtActionPerformed
 
     private void crearCBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearCBtnActionPerformed
+String nombre = usuarioTxt.getText();
+String correo = correoTxt.getText();
+var contraseña = new String(contraseñaPf.getPassword());
+
+if (nombre.isEmpty() || correo.isEmpty() || contraseña.isEmpty()) {
+    JOptionPane.showMessageDialog(this, "Llena todos los campos");
+    return;
+}
+
 try {
+    File file = new File("usuarioss.txt");
 
-    FileWriter archivo = new FileWriter("usuarios.txt", true);
+    FileWriter fw = new FileWriter(file, true);
+    BufferedWriter bw = new BufferedWriter(fw);
 
-    String usuario = usuarioTxt.getText();
-    String correo = correoTxt.getText();
-    String contraseña;
-    contraseña = new String(contraseñaPf.getPassword());
+    bw.write(nombre + "," + correo + "," + contraseña);
+    bw.newLine();
 
-    archivo.write(usuario + "," + correo + "," + contraseña + "\n");
+    bw.flush();
+    bw.close();
 
-    archivo.close();
+    JOptionPane.showMessageDialog(this, "Usuario registrado correctamente");
 
-    JOptionPane.showMessageDialog(this, "Cuenta creada correctamente");
-    
+    // abrir login
     Login login = new Login();
     login.setVisible(true);
-
     this.dispose();
 
-    usuarioTxt.setText("");
-    correoTxt.setText("");
-    contraseñaPf.setText("");
-
 } catch (IOException e) {
-
-    JOptionPane.showMessageDialog(this, "Error al guardar usuario");
-
+    JOptionPane.showMessageDialog(this, "ERROR guardando archivo: " + e.getMessage());
 }
     }//GEN-LAST:event_crearCBtnActionPerformed
 

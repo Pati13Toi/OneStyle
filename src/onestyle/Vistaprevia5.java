@@ -4,6 +4,9 @@
  */
 package onestyle;
 
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author BRENDA
@@ -36,15 +39,20 @@ public class Vistaprevia5 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jButton1.setText("X");
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/camisa5.5.png"))); // NOI18N
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 48)); // NOI18N
         jLabel3.setText("$50.000");
@@ -61,6 +69,10 @@ public class Vistaprevia5 extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         jLabel7.setText("S - M - L - XL");
 
+        jButton2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
+        jButton2.setText("❤️");
+        jButton2.addActionListener(this::jButton2ActionPerformed);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -76,7 +88,9 @@ public class Vistaprevia5 extends javax.swing.JFrame {
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jButton2)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(33, Short.MAX_VALUE))
@@ -101,30 +115,20 @@ public class Vistaprevia5 extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 182, Short.MAX_VALUE)
+                .addGap(46, 46, 46)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(401, 401, 401))
         );
 
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(170, 120, 861, 910);
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/fondo.jpg.png"))); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(1366, 768));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(170, 170, 170)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1600, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1030, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1600, 1030);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -135,6 +139,21 @@ catalogo.setVisible(true);
 
 this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+Favoritos.agregar(
+    "Camisa 5",
+    new ImageIcon(getClass().getResource("/img/camisa5.png"))
+);
+
+JOptionPane.showMessageDialog(this, "Agregado a favoritos ❤️");
+
+Favoritos vista = new Favoritos();
+
+vista.setVisible(true);
+
+this.dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,6 +182,7 @@ this.dispose();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

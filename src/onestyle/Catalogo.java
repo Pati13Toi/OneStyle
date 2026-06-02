@@ -36,6 +36,7 @@ public class Catalogo extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         Vista1 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -51,7 +52,7 @@ public class Catalogo extends javax.swing.JFrame {
 
         jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(130, 30, 960, 18);
+        jTextField1.setBounds(130, 30, 800, 18);
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/2camisa.jpg.png"))); // NOI18N
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -77,17 +78,26 @@ public class Catalogo extends javax.swing.JFrame {
         getContentPane().add(jButton4);
         jButton4.setBounds(580, 420, 280, 280);
 
+        jButton5.setBackground(new java.awt.Color(242, 242, 242));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/6camisa.jpg.png"))); // NOI18N
         jButton5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jButton5.addActionListener(this::jButton5ActionPerformed);
         getContentPane().add(jButton5);
-        jButton5.setBounds(920, 420, 290, 280);
+        jButton5.setBounds(930, 420, 270, 280);
 
         Vista1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/1camisa.jpg.png"))); // NOI18N
         Vista1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Vista1.addActionListener(this::Vista1ActionPerformed);
         getContentPane().add(Vista1);
         Vista1.setBounds(170, 90, 300, 280);
+
+        jButton6.setFont(new java.awt.Font("Segoe UI Emoji", 1, 36)); // NOI18N
+        jButton6.setText("❤️");
+        jButton6.setToolTipText("");
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.addActionListener(this::jButton6ActionPerformed);
+        getContentPane().add(jButton6);
+        jButton6.setBounds(970, 20, 80, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/Lcpequeño.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -151,6 +161,13 @@ vista.setVisible(true);
 this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+Favoritos vista = new Favoritos();
+vista.setVisible(true);
+
+this.dispose();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -183,6 +200,7 @@ this.dispose();
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

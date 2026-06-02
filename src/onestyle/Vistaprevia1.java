@@ -40,11 +40,14 @@ public class Vistaprevia1 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jButton1.setText("X");
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/onestyle/camisa1.1.png"))); // NOI18N
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 48)); // NOI18N
         jLabel3.setText("$50.000");

@@ -131,8 +131,7 @@ String correo = correoTxt.getText();
 
     try {
 
-        BufferedReader lector = new BufferedReader(new FileReader("usuarios.txt"));
-
+    try (BufferedReader lector = new BufferedReader(new FileReader("usuarioss.txt"))) {
         String linea;
 
         while ((linea = lector.readLine()) != null) {
@@ -144,14 +143,17 @@ String correo = correoTxt.getText();
 
             if (correo.equals(usuarioGuardado) && contrasena.equals(contrasenaGuardada)) {
 
+                Sesion.nombre = datos[0];
+                Sesion.correo = datos[1];
+                Sesion.contraseña = datos[2];
+    
                 encontrado = true;
                 break;
 
             }
 
         }
-
-        lector.close();
+    }
 
         if (encontrado) {
 
